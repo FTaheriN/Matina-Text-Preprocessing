@@ -1,0 +1,12 @@
+mode: "dedup"  # Options: "process" or "dedup"
+
+root_dir: "./"
+processed_root_dir: "./processed"
+dedup_root_dir: "./dedup"
+
+processed_docs_path: "./processedFiles/sample_file.jsonl"  # Preprocessed file for deduplication
+
+pipeline_type: "wikiShia"
+
+deduplication_threshold: 0.98  # Similarity threshold for deduplication
+output_chunk_suffix: "_dedup_98"

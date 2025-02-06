@@ -1,0 +1,33 @@
+mode: "process"  # Options: "process" or "dedup"
+
+root_dir: "./"
+processed_root_dir: "./processed"
+dedup_root_dir: "./dedup"
+
+docs_path: "./data/samples.jsonl"
+all_files_pattern: "./data/socialMedia/*.jsonl"
+
+pipeline_type: "socialMedia"
+
+num_processes: 50
+short_doc_thresh: 100
+doc_word_length: [3, 10]
+doc_lang_thresh: 0.5
+doc_num_thresh: 0.5
+doc_symb_thresh: 0.2
+doc_stopword_thresh: 0.3
+shortLine_proportion_thresh: 0.6
+
+cons_new_lines: true
+cons_chars: true
+non_sense_patterns: true
+english_allowed: true
+arabic_allowed: true
+english_lines: true
+numeric_lines: true
+symbolic_lines: true
+personal_info: true
+emojis: false
+norm_dates: true
+norm_numbers: true
+norm_symbols: true

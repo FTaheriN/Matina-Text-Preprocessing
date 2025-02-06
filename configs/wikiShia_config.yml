@@ -1,0 +1,37 @@
+mode: "dedup"  # Options: "process" or "dedup"
+
+root_dir: "/mnt/sas/datasets/0_raw_datasets/wikiShiaResalat/"
+processed_root_dir: "/mnt/sas/datasets/0_raw_datasets/wikiShiaResalat/processed"
+dedup_root_dir: "/mnt/sas/datasets/0_raw_datasets/wikiShiaResalat/dedup"
+
+docs_path: "/mnt/sas/datasets/0_raw_datasets/wikiShiaResalat/D1403051001_wikiShia_textExtracted.jsonl.gz"
+processed_docs_path: "/mnt/sas/datasets/0_raw_datasets/wikiShiaResalat/processed/wikiShia_textExtracted.jsonl.gz"
+compression: gzip
+
+pipeline_type: "wikiShia"
+
+num_processes: 50
+short_doc_thresh: 20
+doc_word_length: [3, 10]
+doc_lang_thresh: 0.8
+doc_num_thresh: 0.7
+doc_symb_thresh: 0.5
+doc_stopword_thresh: 0.1
+shortLine_proportion_thresh: 0.7
+
+cons_new_lines: true
+cons_chars: true
+non_sense_patterns: true
+english_allowed: true
+arabic_allowed: true
+english_lines: false
+numeric_lines: true
+symbolic_lines: true
+personal_info: true
+emojis: false
+norm_dates: true
+norm_numbers: true
+norm_symbols: true
+
+deduplication_threshold: 0.95
+output_chunk_suffix: dedup95

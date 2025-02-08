@@ -32,6 +32,6 @@ To use this pipeline, create a YAML configuration file setting the desired param
 
 Run the pipeline using:
 ```bash
-python main {config file path}
+python main.py {config file path}
 ```
 

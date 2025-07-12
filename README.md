@@ -17,15 +17,14 @@ This pipeline is designed to clean, normalize, and deduplicate Persian text effe
 ---
 This pipeline is highly configurable. The filtering criteria, normalization rules, and deduplication thresholds can all be adjusted to suit different document types, contexts, and processing needs.
 
-<!--## Paper and Dataset
+## Paper and Dataset
 ---
  For a detailed explanation of the methodology and evaluation, please refer to our published paper:
-- **Paper Title:** [Insert Paper Title]
-- **Link:** [Insert Paper Link]
+- **Paper Title:** Matina: A Large-Scale 73B Token Persian Text Corpus
+- **Link:** [https://aclanthology.org/2025.naacl-long.462/](https://aclanthology.org/2025.naacl-long.462/)
 
 Additionally, the dataset processed by this pipeline is available on Hugging Face:
-- **Hugging Face Repository:** [Insert Hugging Face Link] -->
-
+- **Hugging Face Repository:** [https://huggingface.co/datasets/MatinaAI/matina_persian_text_corpus/tree/main](https://huggingface.co/datasets/MatinaAI/matina_persian_text_corpus/tree/main)
 ## Installation and Usage
 ---
 To use this pipeline, create a YAML configuration file setting the desired parameters (or use the default values). Sample configurations are available in the `config` directory.
